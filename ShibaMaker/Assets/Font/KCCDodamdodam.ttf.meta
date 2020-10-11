@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 29c1a15d953a89845beed12ae9ce05c6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KCCDodamdodam
+  fontNames:
+  - KCCDodamdodam
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 309e96cc47746ce48bf1ca9c889090c3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
