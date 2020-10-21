@@ -42,14 +42,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: BackGround
-    uniqueID: 1886028141
+    uniqueID: 3615588093
     locked: 0
-  - name: Object
-    uniqueID: 1727089057
+  - name: Obejct
+    uniqueID: 636981691
     locked: 0
-  - name: Popup
-    uniqueID: 3310858461
+  - name: PopUP
+    uniqueID: 4219274117
     locked: 0
   - name: Effect
-    uniqueID: 2048183
+    uniqueID: 2702434107
     locked: 0
