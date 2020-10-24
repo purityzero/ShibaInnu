@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//왜 누락되지?
 public enum UserEnum
 {
     UserCode = -1,
