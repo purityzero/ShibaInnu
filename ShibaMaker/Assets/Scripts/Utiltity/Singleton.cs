@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using Sirenix.OdinInspector;
 // Singleton Templete class
 // e.g. public class MyClassName : Singleton<MyClassName> {}
 // protected MyClassname() {} 을 선언해서 비 싱글톤 생성자 사용을 방지할 것
 //Test
-public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+public class Singleton<T> : SerializedMonoBehaviour where T : MonoBehaviour
 {
     // Destroy 여부 확인용
     private static bool _ShuttingDown = false;

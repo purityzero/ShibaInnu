@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 public class ButtonManager : MonoBehaviour
 {
-    [Header("MenuBTN")]
+    [BoxGroup("MenuBTN")]
     public Button PlayingBTN;
+    [BoxGroup("MenuBTN")]
     public Button SnackBTN;
+    [BoxGroup("MenuBTN")]
     public Button ExerciseBTN;
+    [BoxGroup("MenuBTN")]
     public Button PartTimeBTN;
+    [BoxGroup("MenuBTN")]
     public Button ItemBTN;
 
-    [Header("TopUI")]
+    [BoxGroup("TopUI")]
     public Button AchievementBTN;
+    [BoxGroup("TopUI")]
     public Button CollectionBookBTN;
 
     private void Start()
