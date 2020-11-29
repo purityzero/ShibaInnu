@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{5DAFA795-859A-84D9-C73D-68D36473206C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InGameScene/RewardPopup.cs">
+    <Files>
+      <File FileName="Assets/Scripts/InGameScene/RewardPopup.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/InGameScene/Reward.cs" />
+      <File FileName="Assets/Scripts/InGameScene/UserInfoPopup.cs" />
+      <File FileName="Assets/Scripts/InGameScene/PopupEvent.cs" />
+      <File FileName="Assets/Scripts/InGameScene/RamblePopup.cs" />
+      <File FileName="Assets/Scripts/InGameScene/PlayPopup.cs" />
+      <File FileName="Assets/Scripts/Utiltity/ButtonAnimmation.cs" />
+      <File FileName="Assets/Scripts/InGameScene/ButtonManager.cs" Line="55" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShibaMaker" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="InGameScene" expanded="True">
+                  <Node name="RewardPopup.cs" selected="True" />
+                </Node>
+                <Node name="Utiltity" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9601635b-fc14-4d1e-8516-51d5d3548f69" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

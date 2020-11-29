@@ -67,6 +67,7 @@ public class PlayPopup : MonoBehaviour
 
     void Start()
     {
+        NextButton.gameObject.SetActive(true);
         NextButton.onClick.AddListener(() => NextButtonClick());
     }
 
@@ -87,10 +88,16 @@ public class PlayPopup : MonoBehaviour
 
         CutNum += 1;
         DataUpdate();
+
+        if (CutNum >= ListData.Count - 1)
+            NextButton.gameObject.SetActive(false);
     }
 
     void DataUpdate()
     {
+        if (CutNum >= ListData.Count)
+            return;
+
         ContentText.text = ListData[CutNum].Strcontent;
 
         ButtonSelect.SetActive(ListData[CutNum].bButton);
@@ -103,6 +110,8 @@ public class PlayPopup : MonoBehaviour
                 SelectButton[i].gameObject.GetComponentInChildren<Text>().text = ListData[CutNum].ButtonString[i];
             }
         }
+
+
     }
 
 }
