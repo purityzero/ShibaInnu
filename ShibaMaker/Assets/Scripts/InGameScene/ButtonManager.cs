@@ -22,11 +22,12 @@ public class ButtonManager : MonoBehaviour
     [BoxGroup("TopUI")]
     public Button CollectionBookBTN;
 
+
     private void Start()
     {
         PlayingBTN.onClick.AddListener(() => BTNPlaying());
         SnackBTN.onClick.AddListener(() => BTNSnack());
-        ExerciseBTN.onClick.AddListener(() => BTNExercise());
+        ExerciseBTN.onClick.AddListener(() => BTNRamble());
         PartTimeBTN.onClick.AddListener(() => BTNPartTime());
         ItemBTN.onClick.AddListener(() => BTNItem());
 
@@ -48,10 +49,10 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("snack");
     }
 
-    public void BTNExercise()
+    public void BTNRamble()
     {
         ExerciseBTN.GetComponent<ButtonAnimmation>().StartAnimation();
-        Debug.Log("Exercis");
+        Debug.Log("Ramble");
     }
 
     public void BTNPartTime()

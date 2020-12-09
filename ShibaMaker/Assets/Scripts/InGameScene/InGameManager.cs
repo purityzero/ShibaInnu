@@ -8,7 +8,11 @@ public class InGameManager : Singleton<InGameManager>
     public UserInfo Player = null;
     public UserInfoPopup InfoPopup;
     public PlayPopup PlayPopup;
-    public List<BasePopup> ShowingPopup;
+    [ReadOnly][SerializeField]
+     private List<BasePopup> ShowingPopup;
+    [BoxGroup("Reward")]
+    [SerializeField]
+    private RewardPopup RewardPopup;
 
     IEnumerator Start()
     {
@@ -16,8 +20,22 @@ public class InGameManager : Singleton<InGameManager>
         Player.ListStatus = player.ListStatus;
 
         yield return new WaitUntil(() => Player != null);
+        //InfoPopup.Init();
+    }
 
-        InfoPopup.Init();
+    public void ShowRewardPopUp(PlayType _playType)
+    {
+        RewardPopup.Init(null);
+    }
+
+    public void AddShowingPopup<T>(T _basePopup) where T : BasePopup
+    {
+        ShowingPopup.Add(_basePopup);
+    }
+
+    public void RemoveShowingPopup<T>(T _basePopup) where T : BasePopup
+    {
+        ShowingPopup.Remove(_basePopup);
     }
 
 }

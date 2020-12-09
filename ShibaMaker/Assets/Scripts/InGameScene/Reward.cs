@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum PlayType
+{ 
+    None,
+    Ramble,
+}
+
 public enum RewardType
 {
     None = -1,

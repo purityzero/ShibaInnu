@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RewardPopup : MonoBehaviour
+public class RewardPopup : BasePopup
 {
 
     [SerializeField] Reward PrefabRewardObj;
@@ -11,13 +11,20 @@ public class RewardPopup : MonoBehaviour
 
     public void Init(List<RewardType> rewardTypes)
     {
-
-        for (int i = 0; i < rewardTypes.Count; i++)
-        {
-            Reward rewardItem = Instantiate<Reward>(PrefabRewardObj, LayoutGroup);
-            rewardItem.Init(rewardTypes[i]);
-        }
+        gameObject.SetActive(true);
+        //if (rewardTypes != null || rewardTypes.Count != 0)
+        //{
+        //    for (int i = 0; i < rewardTypes.Count; i++)
+        //    {
+        //        Reward rewardItem = Instantiate<Reward>(PrefabRewardObj, LayoutGroup);
+        //        rewardItem.Init(rewardTypes[i]);
+        //    }
+        //}
                 
+    }
+
+    protected override void OnStart()
+    {
     }
 }
     
